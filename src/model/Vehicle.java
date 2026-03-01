@@ -1,3 +1,4 @@
+package model;
 
 public abstract class Vehicle {
     private final String numberPlate;
@@ -23,12 +24,13 @@ public abstract class Vehicle {
 
         if (obj == null || getClass() != obj.getClass())
             return false;
+        Vehicle vehicle = (Vehicle) obj;
         return numberPlate.equals(vehicle.numberPlate);
     }
 
     @Override
     public int hashCode() {
-        return numberPLate.hashCode();
+        return numberPlate.hashCode();
     }
 
     @Override
