@@ -1,4 +1,5 @@
 # smart-parking-system
+Java mini project
 
 Description:
 Smart Parking Management System is a Java-based application that manages vehicle entry, parking allocation, ticket generation, and billing. The system models real-world parking operations using object-oriented principles for clean, scalable design.
