@@ -9,7 +9,7 @@ public class Ticket {
     private LocalDateTime exitTime;
     private PaymentReceipt receipt;
 
-    public Ticket(String ticketId,Vehicle vehicle,ParkingSpot spot,LocalDateTime entryTime)
+    public Ticket(String ticketId,Vehicle vehicle,ParkingSpot spot)
     {
         if(ticketId==null||ticketId.isBlank())
         {
@@ -18,7 +18,7 @@ public class Ticket {
         this.ticketId=ticketId;
         this.vehicle=vehicle;
         this.spot=spot;
-        this.entryTime=entryTime;
+        this.entryTime = LocalDateTime.now();
     }
     public String getTicketId()
     {
